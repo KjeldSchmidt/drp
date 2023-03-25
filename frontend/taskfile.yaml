@@ -1,0 +1,13 @@
+version: '3'
+
+tasks:
+  build:
+    desc: "Run the project locally"
+    cmds:
+      - flutter run
+
+  test:
+    desc: "Run all tests"
+    cmds:
+      - flutter test
+
