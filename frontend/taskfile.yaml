@@ -1,7 +1,7 @@
 version: '3'
 
 tasks:
-  build:
+  run:
     desc: "Run the project locally"
     cmds:
       - flutter run
@@ -11,3 +11,22 @@ tasks:
     cmds:
       - flutter test
 
+  load-deps:
+    desc: "Load dependencies"
+    cmds:
+      - flutter pub get
+
+  update-deps:
+    desc: "Update dependencies"
+    cmds:
+      - flutter pub upgrade
+
+  lint:
+    desc: "Run linter"
+    cmds:
+      - flutter analyze
+
+  fmt:
+    desc: "Format code"
+    cmds:
+      - dart format .
